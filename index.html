@@ -1,0 +1,800 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Whatsapp clone" />
+        <meta name="keywords" content="HTML, CSS" />
+        <meta name="author" content="Krutarth" />
+        <title>Whatsapp</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <aside id="contact-list">
+            <!-- Header of chatlist -->
+            <header id="chat-list-header">
+                <img
+                    id="user-pfp"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6wF4iL845OAuaIRMCG3FD2ZFGG1VAiXcXgg&s"
+                    alt="PFP"
+                />
+                <ul id="contact-list-topbar-menus">
+                    <li>
+                        <a aria-label="maybe SVG" href="xz.com">
+                            <svg
+                                width="1.6rem"
+                                height="1.6rem"
+                                viewBox="0 0 67 67"
+                                version="1.1"
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+                            >
+                                <title>Moon</title>
+                                <desc>Created with Sketch.</desc>
+                                <defs></defs>
+                                <g
+                                    id="Page-1"
+                                    stroke="none"
+                                    stroke-width="1"
+                                    fill="none"
+                                    fill-rule="evenodd"
+                                    sketch:type="MSPage"
+                                >
+                                    <path
+                                        d="M49.7,47.8 C31.8,47.8 17.3,33.3 17.3,15.4 C17.3,10.6 18.3,6.1 20.2,2.1 C8.9,7.2 1.1,18.5 1.1,31.7 C1.1,49.6 15.6,64.1 33.5,64.1 C46.7,64.1 58,56.3 63.1,45 C58.9,46.8 54.4,47.8 49.7,47.8 L49.7,47.8 Z"
+                                        id="Moon"
+                                        stroke="#6B6C6E"
+                                        stroke-width="2"
+                                        sketch:type="MSShapeGroup"
+                                    ></path>
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a aria-label="maybe SVG" href="xz.com">
+                            <svg
+                                width="1.6rem"
+                                height="1.6rem"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M9.9898 22.55C9.9398 22.55 9.8898 22.55 9.8398 22.53C6.0098 21.75 2.8998 18.93 1.7398 15.19C1.6198 14.79 1.8398 14.37 2.2298 14.25C2.6298 14.13 3.0498 14.35 3.1698 14.74C4.1698 17.96 6.8398 20.38 10.1398 21.05C10.5498 21.13 10.8098 21.53 10.7198 21.94C10.6498 22.3 10.3298 22.55 9.9898 22.55Z"
+                                    fill="gray"
+                                />
+                                <path
+                                    d="M21.9502 11.73C21.5702 11.73 21.2402 11.44 21.2002 11.06C20.7202 6.32 16.7602 2.75 12.0002 2.75C7.23022 2.75 3.28022 6.32 2.80022 11.05C2.76022 11.46 2.40022 11.77 1.98022 11.72C1.57022 11.68 1.27022 11.31 1.31022 10.9C1.87022 5.4 6.47022 1.25 12.0002 1.25C17.5402 1.25 22.1402 5.4 22.6902 10.9C22.7302 11.31 22.4302 11.68 22.0202 11.72C22.0002 11.73 21.9702 11.73 21.9502 11.73Z"
+                                    fill="gray"
+                                />
+                                <path
+                                    d="M14.0101 22.55C13.6601 22.55 13.3501 22.31 13.2801 21.95C13.2001 21.54 13.4601 21.15 13.8601 21.07C17.1401 20.4 19.8101 18 20.8201 14.8C20.9401 14.4 21.3701 14.18 21.7601 14.31C22.1601 14.43 22.3701 14.86 22.2501 15.25C21.0701 18.97 17.9701 21.76 14.1601 22.54C14.1101 22.54 14.0601 22.55 14.0101 22.55Z"
+                                    fill="gray"
+                                />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a aria-label="maybe SVG" href="xz.com">
+                            <svg
+                                width="1.6rem"
+                                height="1.6rem"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M20 2H2v20h2V4h16v12H6v2H4v2h2v-2h16V2h-2z"
+                                    fill="gray"
+                                />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a aria-label="maybe SVG" href="xz.com">
+                            <svg
+                                width="1.6rem"
+                                height="1.6rem"
+                                viewBox="0 0 15 15"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M8.625 2.5C8.625 3.12132 8.12132 3.625 7.5 3.625C6.87868 3.625 6.375 3.12132 6.375 2.5C6.375 1.87868 6.87868 1.375 7.5 1.375C8.12132 1.375 8.625 1.87868 8.625 2.5ZM8.625 7.5C8.625 8.12132 8.12132 8.625 7.5 8.625C6.87868 8.625 6.375 8.12132 6.375 7.5C6.375 6.87868 6.87868 6.375 7.5 6.375C8.12132 6.375 8.625 6.87868 8.625 7.5ZM7.5 13.625C8.12132 13.625 8.625 13.1213 8.625 12.5C8.625 11.8787 8.12132 11.375 7.5 11.375C6.87868 11.375 6.375 11.8787 6.375 12.5C6.375 13.1213 6.87868 13.625 7.5 13.625Z"
+                                    fill="gray"
+                                />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </header>
+
+            <!-- Contact prompt -->
+            <section class="prompt" id="contact-list-prompt">
+                <div id="contact-list-prompt-close">
+                    <a aria-label="maybe SVG" href="xz.com">
+                        <svg
+                            width="1.5rem"
+                            height="1.5rem"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M6 6L18 18"
+                                stroke="#000000"
+                                stroke-linecap="round"
+                            />
+                            <path
+                                d="M18 6L6.00001 18"
+                                stroke="#000000"
+                                stroke-linecap="round"
+                            />
+                        </svg>
+                    </a>
+                </div>
+                <div id="prompt-message-with-icon">
+                    <img src="assets/no-internet.png" alt="no-icon" />
+                    <section id="contact-list-prompt-message">
+                        <h4>No Contacts</h4>
+                        <article>
+                            You can add contacts from anywhere
+                            <a aria-label="maybe SVG" href="learnmore.com">
+                                Learn More</a
+                            >
+                        </article>
+                    </section>
+                </div>
+            </section>
+
+            <!-- contact- search-bar -->
+            <section id="contact-search-bar">
+                <div id="search-contact">
+                    <button
+                        id="contact-search-button"
+                        aria-label="Search-button"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            x="0px"
+                            y="0px"
+                            width="1rem"
+                            height="1rem"
+                            viewBox="0 0 30 30"
+                            style="fill: #40c057"
+                        >
+                            <path
+                                d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z"
+                            ></path>
+                        </svg>
+                    </button>
+                    <input
+                        id="contact-search-input"
+                        type="text"
+                        placeholder="Search or start a new chat"
+                    />
+                </div>
+            </section>
+
+            <!-- chat-list -->
+            <section id="chat-list-section">
+                <ul id="chat-list">
+                    <li>
+                        <a aria-label="maybe SVG" class="contact" href="xz.com">
+                            <div class="contact-pfp">
+                                <img
+                                    class="contact-pfp"
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNtLnYEqvhKKHET_JzfYOv5hZNV1cngGuY_A&s"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="chat-details">
+                                <div class="contact-name">John Doe</div>
+                                <div class="last-sent-time">12:00</div>
+                                <div class="last-message">Play valorant</div>
+                                <div class="count-icons">
+                                    <svg
+                                        fill="gray"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="0.75rem"
+                                        height="0.75rem"
+                                        viewBox="0 0 52 52"
+                                        enable-background="new 0 0 52 52"
+                                        xml:space="preserve"
+                                    >
+                                        <path
+                                            d="M36.9,23.7h-0.5L33,7.9h0.9c1.6,0,2.9-1.3,2.9-2.9s-1.3-2.9-2.9-2.9H18.1c-1.6,0-2.9,1.3-2.9,2.9s1.3,2.9,2.9,2.9H19l-3.3,15.8h-0.5c-1.6,0-2.9,1.3-2.9,2.9s1.3,2.9,2.9,2.9h8.4v17.4c0,1.6,1.3,3,3,3s3-1.3,3-3V29.6h7.4 c1.6,0,2.9-1.3,2.9-2.9S38.5,23.7,36.9,23.7z"
+                                        />
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a aria-label="maybe SVG" class="contact" href="xz.com">
+                            <div class="contact-pfp">
+                                <img
+                                    class="contact-pfp"
+                                    src="data:image/jpeg;base64,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"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="chat-details">
+                                <div class="contact-name">Coder's Club</div>
+                                <div class="last-sent-time">12:00</div>
+                                <div class="last-message">Lets see.</div>
+                                <div class="count-icons">
+                                    <svg
+                                        fill="gray"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="0.75rem"
+                                        height="0.75rem"
+                                        viewBox="0 0 52 52"
+                                        enable-background="new 0 0 52 52"
+                                        xml:space="preserve"
+                                    >
+                                        <path
+                                            d="M36.9,23.7h-0.5L33,7.9h0.9c1.6,0,2.9-1.3,2.9-2.9s-1.3-2.9-2.9-2.9H18.1c-1.6,0-2.9,1.3-2.9,2.9s1.3,2.9,2.9,2.9H19l-3.3,15.8h-0.5c-1.6,0-2.9,1.3-2.9,2.9s1.3,2.9,2.9,2.9h8.4v17.4c0,1.6,1.3,3,3,3s3-1.3,3-3V29.6h7.4 c1.6,0,2.9-1.3,2.9-2.9S38.5,23.7,36.9,23.7z"
+                                        />
+                                    </svg>
+                                    <div class="message-count">25</div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a aria-label="maybe SVG" class="contact" href="xz.com">
+                            <div class="contact-pfp">
+                                <img
+                                    class="contact-pfp"
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtdUjujbp3B0IraHvw-KQcGTou7sm3xYO2rg&s"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="chat-details">
+                                <div class="contact-name">Dev Doe</div>
+                                <div class="last-sent-time">12:00</div>
+                                <div class="last-message">Thik Hai</div>
+                                <div class="count-icons">
+                                    <div class="message-count">2</div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a aria-label="maybe SVG" class="contact" href="xz.com">
+                            <div class="contact-pfp">
+                                <img
+                                    class="contact-pfp"
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyVaX-1Qt1q4UmRDlj3x0CZ08-zjrFLT0dvg&s"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="chat-details">
+                                <div class="contact-name">Jency Doe</div>
+                                <div class="last-sent-time">12:00</div>
+                                <div class="last-message">
+                                    <svg
+                                        fill="gray"
+                                        width="1rem"
+                                        height="1rem"
+                                        viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M2.305,11.235a1,1,0,0,1,1.414.024l3.206,3.319L14.3,7.289A1,1,0,0,1,15.7,8.711l-8.091,8a1,1,0,0,1-.7.289H6.9a1,1,0,0,1-.708-.3L2.281,12.649A1,1,0,0,1,2.305,11.235ZM20.3,7.289l-7.372,7.289-.263-.273a1,1,0,1,0-1.438,1.39l.966,1a1,1,0,0,0,.708.3h.011a1,1,0,0,0,.7-.289l8.091-8A1,1,0,0,0,20.3,7.289Z"
+                                        />
+                                    </svg>
+                                    Complete assignment
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a aria-label="maybe SVG" class="contact" href="xz.com">
+                            <div class="contact-pfp">
+                                <img
+                                    class="contact-pfp"
+                                    src="data:image/jpeg;base64,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"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="chat-details">
+                                <div class="contact-name">Dhruv Dhaduk</div>
+                                <div class="last-sent-time">02:00</div>
+                                <div class="last-message">Vim sikhle</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a aria-label="maybe SVG" class="contact" href="xz.com">
+                            <div class="contact-pfp">
+                                <img
+                                    class="contact-pfp"
+                                    src="https://i.ytimg.com/vi/6lh7jtb5wgA/maxresdefault.jpg"
+                                    alt="Not-found"
+                                />
+                            </div>
+                            <div class="chat-details">
+                                <div class="contact-name">Jenny YT</div>
+                                <div class="last-sent-time">12:50</div>
+                                <div class="last-message">Don't Bother</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a aria-label="maybe SVG" class="contact" href="xz.com">
+                            <div class="contact-pfp">
+                                <img
+                                    class="contact-pfp"
+                                    src="https://im.rediff.com/cricket/2021/jan/30jay-shah.JPG?w=450&h=450"
+                                    alt="High profile"
+                                />
+                            </div>
+                            <div class="chat-details">
+                                <div class="contact-name">Jay Shah</div>
+                                <div class="last-sent-time">12:00</div>
+                                <div class="last-message">
+                                    <svg
+                                        fill="gray"
+                                        width="1rem"
+                                        height="1rem"
+                                        viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M2.305,11.235a1,1,0,0,1,1.414.024l3.206,3.319L14.3,7.289A1,1,0,0,1,15.7,8.711l-8.091,8a1,1,0,0,1-.7.289H6.9a1,1,0,0,1-.708-.3L2.281,12.649A1,1,0,0,1,2.305,11.235ZM20.3,7.289l-7.372,7.289-.263-.273a1,1,0,1,0-1.438,1.39l.966,1a1,1,0,0,0,.708.3h.011a1,1,0,0,0,.7-.289l8.091-8A1,1,0,0,0,20.3,7.289Z"
+                                        />
+                                    </svg>
+                                    Comming
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a aria-label="maybe SVG" class="contact" href="xz.com">
+                            <div class="contact-pfp">
+                                <img
+                                    class="contact-pfp"
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyVaX-1Qt1q4UmRDlj3x0CZ08-zjrFLT0dvg&s"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="chat-details">
+                                <div class="contact-name">Prof. DBMS</div>
+                                <div class="last-sent-time">11:00</div>
+                                <div class="last-message">
+                                    <svg
+                                        fill="gray"
+                                        width="1rem"
+                                        height="1rem"
+                                        viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M2.305,11.235a1,1,0,0,1,1.414.024l3.206,3.319L14.3,7.289A1,1,0,0,1,15.7,8.711l-8.091,8a1,1,0,0,1-.7.289H6.9a1,1,0,0,1-.708-.3L2.281,12.649A1,1,0,0,1,2.305,11.235ZM20.3,7.289l-7.372,7.289-.263-.273a1,1,0,1,0-1.438,1.39l.966,1a1,1,0,0,0,.708.3h.011a1,1,0,0,0,.7-.289l8.091-8A1,1,0,0,0,20.3,7.289Z"
+                                        />
+                                    </svg>
+                                    Ok.
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a aria-label="maybe SVG" class="contact" href="xz.com">
+                            <div class="contact-pfp">
+                                <img
+                                    class="contact-pfp"
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwCAxHoR2WVbKwnIqUVfFThhnY_MZNtJpzkQ&s"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="chat-details">
+                                <div class="contact-name">Ganesh Patel</div>
+                                <div class="last-sent-time">10:12</div>
+                                <div class="last-message">
+                                    <svg
+                                        fill="gray"
+                                        width="1rem"
+                                        height="1rem"
+                                        viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M2.305,11.235a1,1,0,0,1,1.414.024l3.206,3.319L14.3,7.289A1,1,0,0,1,15.7,8.711l-8.091,8a1,1,0,0,1-.7.289H6.9a1,1,0,0,1-.708-.3L2.281,12.649A1,1,0,0,1,2.305,11.235ZM20.3,7.289l-7.372,7.289-.263-.273a1,1,0,1,0-1.438,1.39l.966,1a1,1,0,0,0,.708.3h.011a1,1,0,0,0,.7-.289l8.091-8A1,1,0,0,0,20.3,7.289Z"
+                                        />
+                                    </svg>
+                                    Let's Play.
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a aria-label="maybe SVG" class="contact" href="xz.com">
+                            <div class="contact-pfp">
+                                <img
+                                    class="contact-pfp"
+                                    src="https://i.pinimg.com/474x/36/aa/dc/36aadc9317151fde4df05ad4e7f102b6.jpg"
+                                    alt="mat dekh"
+                                />
+                            </div>
+                            <div class="chat-details">
+                                <div class="contact-name">Latika</div>
+                                <div class="last-sent-time">10:10</div>
+                                <div class="last-message">Attitude huh?</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a aria-label="maybe SVG" class="contact" href="xz.com">
+                            <div class="contact-pfp">
+                                <img
+                                    class="contact-pfp"
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUDBWkG5scM3ElVX-jv0j-4RAmxKOE3u3m-g&s"
+                                    alt="Nahi hai"
+                                />
+                            </div>
+                            <div class="chat-details">
+                                <div class="contact-name">Raju</div>
+                                <div class="last-sent-time">10:00</div>
+                                <div class="last-message">call me</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a aria-label="maybe SVG" class="contact" href="xz.com">
+                            <div class="contact-pfp">
+                                <img
+                                    class="contact-pfp"
+                                    src="https://avatarfiles.alphacoders.com/173/thumb-1920-173788.jpg"
+                                    alt="not-found"
+                                />
+                            </div>
+                            <div class="chat-details">
+                                <div class="contact-name">Crush</div>
+                                <div class="last-sent-time">Yesterday</div>
+                                <div class="last-message">
+                                    <svg
+                                        fill="gray"
+                                        width="1rem"
+                                        height="1rem"
+                                        viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M2.305,11.235a1,1,0,0,1,1.414.024l3.206,3.319L14.3,7.289A1,1,0,0,1,15.7,8.711l-8.091,8a1,1,0,0,1-.7.289H6.9a1,1,0,0,1-.708-.3L2.281,12.649A1,1,0,0,1,2.305,11.235ZM20.3,7.289l-7.372,7.289-.263-.273a1,1,0,1,0-1.438,1.39l.966,1a1,1,0,0,0,.708.3h.011a1,1,0,0,0,.7-.289l8.091-8A1,1,0,0,0,20.3,7.289Z"
+                                        />
+                                    </svg>
+                                    Cofee when?
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </aside>
+
+        <!-- Open-chat -->
+        <main id="chat-section">
+            <header id="chat-header">
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNtLnYEqvhKKHET_JzfYOv5hZNV1cngGuY_A&s"
+                    alt=""
+                />
+                <div id="chat-header-wrapper">
+                    <div class="contact-name">John Doe</div>
+                    <ul id="contact-list-topbar-menus">
+                        <li>
+                            <a>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    x="0px"
+                                    y="0px"
+                                    width="1.5rem"
+                                    height="1.5rem"
+                                    viewBox="0 0 30 30"
+                                    style="fill: grey"
+                                >
+                                    <path
+                                        d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z"
+                                    ></path>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <svg
+                                    width="1.6rem"
+                                    height="1.6rem"
+                                    viewBox="0 0 15 15"
+                                    style="fill: grey"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M8.625 2.5C8.625 3.12132 8.12132 3.625 7.5 3.625C6.87868 3.625 6.375 3.12132 6.375 2.5C6.375 1.87868 6.87868 1.375 7.5 1.375C8.12132 1.375 8.625 1.87868 8.625 2.5ZM8.625 7.5C8.625 8.12132 8.12132 8.625 7.5 8.625C6.87868 8.625 6.375 8.12132 6.375 7.5C6.375 6.87868 6.87868 6.375 7.5 6.375C8.12132 6.375 8.625 6.87868 8.625 7.5ZM7.5 13.625C8.12132 13.625 8.625 13.1213 8.625 12.5C8.625 11.8787 8.12132 11.375 7.5 11.375C6.87868 11.375 6.375 11.8787 6.375 12.5C6.375 13.1213 6.87868 13.625 7.5 13.625Z"
+                                        fill="gray"
+                                    />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+            <div id="chat-wrapper">
+                <div class="chat-prompt">
+                    <svg
+                        fill="gray"
+                        width="0.5rem"
+                        height="0.5rem"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                        enable-background="new 0 0 24 24"
+                    >
+                        <path
+                            d="M17,9V7c0-2.8-2.2-5-5-5S7,4.2,7,7v2c-1.7,0-3,1.3-3,3v7c0,1.7,1.3,3,3,3h10c1.7,0,3-1.3,3-3v-7C20,10.3,18.7,9,17,9z M9,7c0-1.7,1.3-3,3-3s3,1.3,3,3v2H9V7z"
+                        />
+                    </svg>
+                    messages are end-to-end-encrypted blah blah blah.messages
+                    are end-to-end-encrypted blah blah blah.messages are
+                    end-to-end-encrypted blah blah blah.
+                </div>
+                <div id="chat-date">Today</div>
+                <ul id="messages">
+                    <li sent="false">
+                        <article class="message">
+                            Hi
+                            <div class="message-time">12:00</div>
+                        </article>
+                    </li>
+
+                    <li sent="false">
+                        <article class="message received">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Praesentium voluptas, unde aliquam facilis
+                            debitis cupiditate dolorem eos incidunt blanditiis
+                            dignissimos quod nihil, rerum aut tenetur, illo
+                            distinctio. Soluta, obcaecati magni?
+                            <div class="message-time">12:00</div>
+                        </article>
+                    </li>
+                    <li sent="true">
+                        <article class="message">
+                            Hello!!
+                            <div class="message-time">
+                                12:00
+                                <svg
+                                    fill="gray"
+                                    width="1rem"
+                                    height="1rem"
+                                    viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M2.305,11.235a1,1,0,0,1,1.414.024l3.206,3.319L14.3,7.289A1,1,0,0,1,15.7,8.711l-8.091,8a1,1,0,0,1-.7.289H6.9a1,1,0,0,1-.708-.3L2.281,12.649A1,1,0,0,1,2.305,11.235ZM20.3,7.289l-7.372,7.289-.263-.273a1,1,0,1,0-1.438,1.39l.966,1a1,1,0,0,0,.708.3h.011a1,1,0,0,0,.7-.289l8.091-8A1,1,0,0,0,20.3,7.289Z"
+                                    />
+                                </svg>
+                            </div>
+                        </article>
+                    </li>
+                    <li sent="true">
+                        <article class="message received">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Praesentium voluptas, unde aliquam facilis
+                            debitis cupiditate dolorem eos incidunt blanditiis
+                            dignissimos quod nihil, rerum aut tenetur, illo
+                            distinctio. Soluta, obcaecati magni?
+                            <div class="message-time">12:00</div>
+                        </article>
+                    </li>
+
+                    <li sent="true">
+                        <article class="message">
+                            whatcha doin
+                            <div class="message-time">
+                                12:00
+                                <svg
+                                    fill="gray"
+                                    width="1rem"
+                                    height="1rem"
+                                    viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M2.305,11.235a1,1,0,0,1,1.414.024l3.206,3.319L14.3,7.289A1,1,0,0,1,15.7,8.711l-8.091,8a1,1,0,0,1-.7.289H6.9a1,1,0,0,1-.708-.3L2.281,12.649A1,1,0,0,1,2.305,11.235ZM20.3,7.289l-7.372,7.289-.263-.273a1,1,0,1,0-1.438,1.39l.966,1a1,1,0,0,0,.708.3h.011a1,1,0,0,0,.7-.289l8.091-8A1,1,0,0,0,20.3,7.289Z"
+                                    />
+                                </svg>
+                            </div>
+                        </article>
+                    </li>
+                    <li sent="false">
+                        <article class="message">
+                            chill
+                            <div class="message-time">11:58</div>
+                        </article>
+                    </li>
+                    <li sent="true">
+                        <article class="message">
+                            what to do?!!
+                            <div class="message-time">
+                                11:59
+                                <svg
+                                    fill="gray"
+                                    width="1rem"
+                                    height="1rem"
+                                    viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M2.305,11.235a1,1,0,0,1,1.414.024l3.206,3.319L14.3,7.289A1,1,0,0,1,15.7,8.711l-8.091,8a1,1,0,0,1-.7.289H6.9a1,1,0,0,1-.708-.3L2.281,12.649A1,1,0,0,1,2.305,11.235ZM20.3,7.289l-7.372,7.289-.263-.273a1,1,0,1,0-1.438,1.39l.966,1a1,1,0,0,0,.708.3h.011a1,1,0,0,0,.7-.289l8.091-8A1,1,0,0,0,20.3,7.289Z"
+                                    />
+                                </svg>
+                            </div>
+                        </article>
+                    </li>
+                    <li sent="false">
+                        <article class="message">
+                            Play valorant
+                            <div class="message-time">12:00</div>
+                        </article>
+                    </li>
+                </ul>
+                <div id="go-down-button">
+                    <svg
+                        width="1rem"
+                        height="1rem"
+                        viewBox="0 0 16 16"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="m 1 5 c 0 -0.265625 0.105469 -0.519531 0.292969 -0.707031 c 0.390625 -0.390625 1.023437 -0.390625 1.414062 0 l 5.292969 5.292969 l 5.292969 -5.292969 c 0.390625 -0.390625 1.023437 -0.390625 1.414062 0 c 0.1875 0.1875 0.292969 0.441406 0.292969 0.707031 s -0.105469 0.519531 -0.292969 0.707031 l -6 6 c -0.390625 0.390625 -1.023437 0.390625 -1.414062 0 l -6 -6 c -0.1875 -0.1875 -0.292969 -0.441406 -0.292969 -0.707031 z m 0 0"
+                            fill="#2e3436"
+                        />
+                    </svg>
+                </div>
+            </div>
+            <footer id="write-message">
+                <a aria-label="maybe SVG" href="xz.com">
+                    <svg
+                        width="1.5rem"
+                        height="1.5rem"
+                        viewBox="0 0 15 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M13.5 7.5L7.74264 13.2574C6.94699 14.053 5.86786 14.5 4.74264 14.5C2.3995 14.5 0.5 12.6005 0.5 10.2574C0.5 9.13214 0.946991 8.05301 1.74264 7.25736L7.67157 1.32843C8.20201 0.797993 8.92143 0.5 9.67157 0.5C11.2337 0.5 12.5 1.76633 12.5 3.32843C12.5 4.07857 12.202 4.79799 11.6716 5.32843L5.91421 11.0858C5.649 11.351 5.28929 11.5 4.91421 11.5C4.13316 11.5 3.5 10.8668 3.5 10.0858C3.5 9.71071 3.649 9.351 3.91421 9.08579L9.5 3.5"
+                            stroke="#000000"
+                        />
+                    </svg>
+                </a>
+                <input
+                    id="message-input"
+                    type="text"
+                    placeholder="Type a message here.."
+                />
+                <a aria-label="maybe SVG" href="xz.com">
+                    <svg
+                        fill="gray"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="1.5rem"
+                        height="1.5rem"
+                        viewBox="0 0 52 52"
+                        enable-background="new 0 0 52 52"
+                        xml:space="preserve"
+                    >
+                        <path
+                            d="M2.1,44.5l4.4-16.3h18.6c0.5,0,1-0.5,1-1v-2c0-0.5-0.5-1-1-1H6.5l-4.3-16l0,0C2.1,8,2,7.7,2,7.4C2,6.7,2.7,6,3.5,6.1c0.2,0,0.3,0.1,0.5,0.1l0,0l0,0l0,0l45,18.5c0.6,0.2,1,0.8,1,1.4s-0.4,1.1-0.9,1.3l0,0L4,46.4l0,0c-0.2,0.1-0.4,0.1-0.6,0.1C2.6,46.4,2,45.8,2,45C2,44.8,2,44.7,2.1,44.5L2.1,44.5z"
+                        />
+                    </svg>
+                </a>
+            </footer>
+        </main>
+
+        <!-- contact INfo -->
+        <div id="contact-information-section">
+            <header id="contact-info-header">
+                <a aria-label="maybe SVG" href="xz.com">
+                    <svg
+                        width="1.5rem"
+                        height="1.5rem"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M6 6L18 18"
+                            stroke="#000000"
+                            stroke-linecap="round"
+                        />
+                        <path
+                            d="M18 6L6.00001 18"
+                            stroke="#000000"
+                            stroke-linecap="round"
+                        />
+                    </svg> </a
+                >Contact Info
+            </header>
+            <main id="about-section">
+                <figure>
+                    <img
+                        id="contact-info-pfp"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNtLnYEqvhKKHET_JzfYOv5hZNV1cngGuY_A&s"
+                        alt=""
+                    />
+                    <figcaption>John Doe</figcaption>
+                </figure>
+                <section id="media-section">
+                    <h4 id="media-header -h4">
+                        <a
+                            aria-label="maybe SVG"
+                            id="media-header"
+                            style="text-decoration: none"
+                            href="xz.com"
+                        >
+                            Media, Links and Documents
+                            <svg
+                                version="1.1"
+                                id="Layer_1"
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="1rem"
+                                height="1rem"
+                                viewBox="0 0 64 64"
+                                enable-background="new 0 0 64 64"
+                                xml:space="preserve"
+                            >
+                                <g>
+                                    <polyline
+                                        fill="none"
+                                        stroke="#000000"
+                                        stroke-width="2"
+                                        stroke-linejoin="bevel"
+                                        stroke-miterlimit="10"
+                                        points="27,15 44,32 27,49 	"
+                                    />
+                                </g>
+                            </svg>
+                        </a>
+                    </h4>
+                    <div id="images">
+                        <img src="assets/image-notfound.png" alt="" />
+                        <img src="assets/image-notfound.png" alt="" />
+                        <img src="assets/image-notfound.png" alt="" />
+                    </div>
+                </section>
+                <article id="about-desc">
+                    <h4 id="media-header">About and phone number</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Ratione perspiciatis, nobis, dicta qui natus
+                        maxime consequuntur corrupti voluptas distinctio rem
+                        laboriosam soluta hic quis omnis? Nam nemo at explicabo
+                        accusantium. Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Earum facilis tempore dolorum
+                        expedita. Quasi accusantium iusto animi necessitatibus,
+                        quisquam voluptates delectus cupiditate facilis
+                        suscipit, quis incidunt eos nihil ducimus. Id! Lorem
+                        ipsum dolor sit amet consectetur adipisicing elit.
+                        Possimus qui velit omnis dicta ex labore delectus
+                        debitis culpa, magnam aperiam quia! Porro culpa
+                        consequuntur totam non aliquam cum neque minima?
+                    </p>
+                    <hr />
+                </article>
+            </main>
+        </div>
+    </body>
+</html>
